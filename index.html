@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: rgb(39, 39, 39);
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      h1 {
+        font-size: 4rem;
+        background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        padding: 5rem 1rem;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        text-align: center;
+        width: 25rem;
+        padding: 1.5rem;
+        margin: 3rem auto;
+        background-color: #cfcece3e;
+        list-style: none;
+      }
+      li a {
+        font-size: 2.5rem;
+        color: #00ff95aa;
+        text-decoration: none;
+        text-align: center;
+      }
+      li:hover {
+        transition: all 0.1s;
+        transform: scale(1.05);
+      }
+      @media screen and (max-width: 900px) {
+        html {
+          font-size: 56.25%;
+        }
+        ul {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        html {
+          font-size: 50%;
+        }
+        ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>7 Essential Components Using HTML, CSS, and JavaScript</h1>
+    <ul>
+      <li>
+        <a href="./1-contact-us-form/index.html" target="_blank"
+          >Form Validation</a
+        >
+      </li>
+      <li>
+        <a href="./2-modal/index.html" target="_blank">Modal & Overlay</a>
+      </li>
+      <li><a href="./3-carousel/index.html" target="_blank">Carousel</a></li>
+      <li><a href="./4-tabs/index.html" target="_blank">Tabs Component</a></li>
+      <li><a href="./5-accordian/index.html" target="_blank">Accoridan</a></li>
+      <li>
+        <a href="./6-mobile-navbar/index.html" target="_blank">Mobile Navbar</a>
+      </li>
+      <li>
+        <a href="./7-pagination/index.html" target="_blank">Pagination</a>
+      </li>
+    </ul>
+  </body>
+</html>

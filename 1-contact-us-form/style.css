@@ -1,0 +1,118 @@
+body {
+  font-family: sans-serif;
+}
+.h1 {
+  line-height: 0;
+}
+.container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid #f7f7f7;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.info {
+  margin-bottom: 50px;
+}
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fname {
+  width: 48%;
+  margin-left: 2.8vw;
+}
+.lname {
+  width: 48%;
+  margin-right: 2.8vw;
+}
+label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 4.4vw;
+  font-weight: 600;
+}
+.errors:not(.lname .errors, .fname .errors) {
+  text-align: left;
+  margin-left: 4.4vw;
+}
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+input[type="text"],
+textarea {
+  border: 1px solid #ccc;
+  outline: none;
+}
+button {
+  width: 84%;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  background: blue;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 1px solid blue;
+  margin-top: 25px;
+  transition: color 0.4s ease-out, background 0.4s ease-out;
+}
+button:hover {
+  color: blue;
+  background: #fff;
+}
+.errors {
+  text-align: start;
+  display: block;
+  color: red;
+  margin: 5px 0 0 20px;
+}
+.error {
+  transition: 0.2s;
+  box-shadow: 0 0 15px 0 rgba(128, 128, 128, 0.253);
+}
+.flabel,
+.llabel {
+  margin-left: 25px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .fname {
+    width: 100%;
+    margin-left: 0;
+  }
+  .lname {
+    width: 100%;
+    margin-right: 0;
+  }
+  .lname .errors,
+  .fname .errors {
+    text-align: left;
+    margin-left: 4.4vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    margin-left: 6.8vw;
+  }
+}

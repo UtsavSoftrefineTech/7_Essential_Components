@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Model Example</title>
+  </head>
+  <body>
+    <section class="modal hidden">
+      <button class="btn-close">⨉</button>
+      <div class="model-data">
+        <div class="model-logo">
+          <ion-icon name="warning-outline"></ion-icon>
+        </div>
+        <div class="model-info">
+          <h3>Hi, Utsav Desai</h3>
+          <p>
+            Utsav Desai is a technology enthusiast with an interest in DevOps,
+            App Development, and Web Development.
+          </p>
+        </div>
+      </div>
+      <div class="btn-flex">
+        <button class="btn cancel-btn">Cancel</button>
+        <button class="btn deactivate-btn">Deactivate</button>
+      </div>
+    </section>
+
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open">Open Modal</button>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact Form Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Sales</h1>
+      <h4 class="info">Aute magna true veniam aliqua magna enim voluptate.</h4>
+      <form name="contactForm" method="post">
+        <div class="name">
+          <div class="fname">
+            <label class="flabel" for="name">First Name</label>
+            <input
+              class="remove"
+              type="text"
+              id="fname"
+              name="fname"
+              onfocus="validate()"
+            />
+            <span class="errors"></span><br />
+          </div>
+          <div class="lname">
+            <label for="name" class="llabel">Last Name</label>
+            <input
+              class="remove"
+              type="text"
+              id="lname"
+              name="lname"
+              onfocus="validate()"
+            />
+            <span class="errors"></span><br />
+          </div>
+        </div>
+
+        <label for="company">Company</label>
+        <input
+          class="remove"
+          type="text"
+          id="company"
+          name="company"
+          onfocus="validate()"
+        />
+        <span class="errors"></span><br />
+
+        <label for="email">Email</label>
+        <input
+          class="remove"
+          type="text"
+          id="email"
+          name="email"
+          onfocus="validate()"
+        />
+        <span class="errors"></span><br />
+
+        <label for="phone">Phone number</label>
+        <input
+          class="remove"
+          type="text"
+          id="phone"
+          name="phone"
+          onfocus="validate()"
+        />
+        <span class="errors"></span><br />
+
+        <label for="subject">Message</label>
+        <textarea
+          class="remove"
+          cols="132"
+          rows="5"
+          name="message"
+          id="message"
+          onfocus="validate()"
+        ></textarea>
+        <span class="errors"></span><br />
+
+        <button type="submit" value="Submit">Let's talk</button>
+      </form>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

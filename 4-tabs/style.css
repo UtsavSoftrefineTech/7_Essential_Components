@@ -1,0 +1,60 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  height: 20rem;
+  width: 60%;
+  padding: 3rem;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+}
+
+.tablink {
+  height: 3.5rem;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: rgba(57, 57, 57, 0.37);
+}
+
+.tablink.active {
+  color: rgba(0, 0, 255, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 255, 0.6);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+  color: rgba(44, 43, 43, 0.795);
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

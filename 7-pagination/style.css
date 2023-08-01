@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 80vh;
+  width: 92vw;
+  padding: 3rem;
+  margin: 4rem auto 2rem auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.139);
+  padding: 0 1rem;
+}
+
+button {
+  font-weight: 500;
+  background: none;
+  border: none;
+  display: flex;
+  color: rgba(57, 57, 57, 0.74);
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+button p {
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.page-link {
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 1.5rem 1.2rem;
+}
+
+.page-link:hover {
+  cursor: pointer;
+}
+
+.active {
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0, 0, 255, 0.6);
+  border-top: 3px solid rgba(0, 0, 255, 0.6);
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 56.25%;
+  }
+  .page-link {
+    padding: 1.8rem 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .page-link {
+    padding: 1.8rem 0.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 43.75%;
+  }
+  .page-link {
+    padding: 2.2rem 0.5rem;
+  }
+}

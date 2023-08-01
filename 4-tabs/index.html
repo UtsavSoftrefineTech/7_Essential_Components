@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tabs Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="tab-list">
+        <li>
+          <button class="tablink active" onclick="opencontent(event,'Profile')">
+            Profile
+          </button>
+        </li>
+        <li>
+          <button class="tablink" onclick="opencontent(event,'Dashboard')">
+            Dashboard
+          </button>
+        </li>
+        <li>
+          <button class="tablink" onclick="opencontent(event,'Settings')">
+            Settings
+          </button>
+        </li>
+        <li>
+          <button class="tablink" onclick="opencontent(event,'Contacts')">
+            Contacts
+          </button>
+        </li>
+      </ul>
+
+      <div id="Profile" class="content active">
+        <!-- Initially set 'Profile' as active -->
+        <h3>Start Your Tour App Using Flutter, Node Js, And Mongo DB</h3>
+        <p>
+          Basically, This is Tourism Application. Start Your Tour enables the
+          traveler to post their customized requirements on the online platform.
+          Agencies get these requirements and give the best package with
+          excellent itineraries via the same platform. Customers get multiple
+          packages from different agencies on their requirements and compare
+          with each other and filter by price, reviews, and many other features.
+          If a customer likes any of the packages then he/she can book it online
+          on SYT.
+        </p>
+      </div>
+
+      <div id="Dashboard" class="content">
+        <h3>Discussion Forum Using Flutter And Firebase</h3>
+        <p>
+          This is almost like Whatsapp, We chat with our friends and make a
+          group of students and teachers for doubt solving. This is a simple
+          project but a good design app. The feature of authorization allows the
+          user to use their account anywhere anytime with the use of any mobiles
+          phone.  User has to log into their application with their email id
+          and password as there is no need for OTP. This chat application is
+          made for teachers and students so that they can communicate and solve
+          their doubts regarding studies. Students can also chat by making
+          groups using the given credential to them. A very simple is used for
+          the easy maintenance of the application. Login logout facilities are
+          given to the user for safety and security purposes.
+        </p>
+      </div>
+
+      <div id="Settings" class="content">
+        <h3>Random Script Using Bootstrap And Jquery</h3>
+        <p>
+          In this website, we can do many random scripts like generate QR codes,
+          generate a random password, generate random youtube videos, generate
+          hex codes of any color, generate random dice numbers, and led glow we
+          can see in any color.
+        </p>
+      </div>
+
+      <div id="Contacts" class="content">
+        <h3>User Authentication Using JWT token</h3>
+        <p>
+          This project is the User Authentication operation. such as Userlogin,
+          Usersignup, GetUserProfile, DeleteUser, Userlogout, and UserUpdate.
+          Any project requires an Authorized mechanism. For example, if you
+          create an e-commerce website or application, you’ll need this
+          LoginModel to store all customer data.
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

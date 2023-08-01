@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #80ed99;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  margin: 2% auto;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.button {
+  position: absolute;
+  top: calc(80% - 30%);
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.button a {
+  width: 3rem;
+  height: 3rem;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-size: 2rem;
+  user-select: none;
+}
+
+.button a:hover {
+  background: rgba(0, 0, 0, 0.687);
+}
+
+.prev {
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  border-radius: 5px 0 0 5px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  position: absolute;
+  bottom: 1rem;
+  left: calc(80% - 35%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0.8rem;
+  height: 2rem;
+  border-radius: 15px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background: #bbb;
+  display: inline-block;
+  margin: 0 0.1rem;
+}
+
+.active,
+.dot:hover {
+  background: yellow;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+  .button {
+    top: calc(80% - 32%);
+  }
+  .dots {
+    left: calc(80% - 36%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+
+  .dots {
+    left: calc(80% - 39%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+  .button {
+    top: calc(80% - 30%);
+  }
+  .dots {
+    left: calc(80% - 40%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dots {
+    left: calc(80% - 41%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+    top: calc(80% - 35%);
+  }
+  .dots {
+    left: calc(80% - 42%);
+  }
+}
