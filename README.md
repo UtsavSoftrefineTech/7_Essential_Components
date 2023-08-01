@@ -54,7 +54,7 @@ To incorporate these components into your project, follow these steps:
 
 ## Deployment
 
-The project is deployed on Netlify. You can view the live version [here](<insert netlify link>).
+The project is deployed on Netlify. You can view the live version [here](https://7-javascript-essential-components.netlify.app/).
 
 ## Feedback and Support
 
